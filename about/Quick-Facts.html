@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quick Facts</title>
+
+<!-- Fajlat  external per css dhe javascript -->
+    <link rel="stylesheet" href="../menu.css">
+	<link rel="stylesheet" href="about-kosovo.css">
+	<link rel="stylesheet" href="tema.css">
+	<link rel="stylesheet" href="show-hide.css">
+	<link rel="stylesheet" href="../scroll-up-button.css">
+   	<script src="../scroll-up.js"></script>
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   	<script src="../jQuery.js"></script>
+   	<script src="../sweetalert.js"></script>
+   	<script src="show-hide.js"></script>
+  	
+</head>
+<body class="body" >
+
+
+<header class="mainheader">	
+
+	<!-- Pjesa me menute kryesore dhe fotot si linqe te rrjeteve sociale -->
+	<nav>
+		<!-- Fotot si linqe te rrjeteve sociale ne nav menu -->
+		<div class="simg">
+		 	<a  href="mailto:qlirimmurati@gmail.com">
+			  <img id="secureEmail" src="../images/menu/gmail.png" alt="gmail">
+			 </a>
+		    <a href="https://facebook.com">
+		      <img src="../images/menu/facebook.png"  alt="facebook">
+		   </a>
+		   <a href="https://twitter.com/">
+		       <img src="../images/menu/twitter.png"  alt="twitter">
+		   </a>
+		</div>
+
+		<!-- Menute kryesore -->
+			<ul>
+				<li ><a href="../index.html"> HOME</a></li>
+				<li class="active" ><a href="about-kosovo.html"> ABOUT KOSOVO</a></li>
+				<li> <a  href="../discover/discover.html"> DISCOVER</a>
+					<ul>
+						<li><a href="../discover/destinations/nature.html">DESTINATIONS</a></li>
+						<li><a href="../discover/activities/activities.html">ACTIVITIES</a></li>
+					</ul>
+				</li>
+				<li><a href="../contact/contact.html"> CONTACT US</a></li>
+			</ul>
+
+	</nav>
+</header>
+
+     <!-- Butoni per scroll up -->
+		<button onclick="topFunction()" id="Btn"  title="Go to top"><p></p></button>
+
+<!-- Pjesa e faqes me permbajtjen e temes qe shtjellohet -->
+<div class="content">
+	<h1 id="tema"><a href="#quickfacts"> Quick facts about Kosovo </a></h1>
+		<img src="../images/about-kosovo/quick-facts.png" alt="Quick-Facts" width="100%" height="600px">
+		<a class="quickfacts">
+			
+			<table width="617">
+
+				<tbody>
+					<tr>
+						<td>Official name:</td>
+						<td>Republic of Kosovo</td>
+					</tr>
+					<tr>
+						<td>Local short name:</td>
+						<td>Kosova/Kosovë/Kosovo</td>
+					</tr>
+					<tr>
+						<td>Capital:</td>
+						<td>Prishtina/Prishtinë/Pristina</td>
+					</tr>
+					<tr>
+						<td>Location:</td>
+						<td>Southeast Europe</td>
+					</tr>
+					<tr>
+						<td>Domonym:</td>
+						<td>Kosovar, Kosovan</td>
+					</tr>
+					<tr>
+						<td>Population:</td>
+						<td>1.895.250</td>
+					</tr>
+					<tr>
+						<td>Age Structure:</td>
+						<td>0-14 years:     25.01%  (Males: 246.281/ Females: 227,718)</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>15-24 years:    17.22% (Males: 170,515/ Females: 155,840)</p>
+							<p>23-54 years:   42.57% (Males: 425,815/ Females: 381/037)</p>
+							<p>55-64 years:    7.92%   (Males: 75,964/  Females: 74.170)</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>65 years and over: 7.28 % (Males:57,965/  Females: 79.945)</td>
+							</tr>
+							<tr>
+								<td>M)edian Age:</td>
+								<td>29.1 years (estimation)</td>
+							</tr>
+							<tr>
+								<td>Density:</td>
+								<td>159/km<sup>2</sup> or  412/sq mi (estimation)</td>
+							</tr>
+							<tr>
+								<td>Life Expectancy:</td>
+								<td>69</td>
+							</tr>
+							<tr>
+								<td>Government:</td>
+								<td>Parliamentary Republic</td>
+							</tr>
+							<tr>
+								<td>Independence Day:</td>
+								<td>17.02.2008</td>
+
+							</tr>
+							<tr>
+								<td>Area:</td>
+								<td>10 908 km2/4,212 sq miles</td>
+							</tr>
+							<tr>
+								<td>Currency:</td>
+								<td>Euro</td>
+							</tr>
+							<tr>
+								<td><abbr tittle="Gross domestic product">GDP</abbr> per capital:</td>
+								<td>€ 3,641 $  (World Bank, 2016)</td>
+							</tr>
+							<tr>
+								<td>Language:</td>
+								<td>Official: Albanian, Serbian. Other: English, Turkish, German</td>
+							</tr>
+							<tr>
+								<td>Religion:</td>
+								<td>Muslim, Roman Catholic, and Orthodox</td>
+							</tr>
+							<tr>
+								<td>Time zone:</td>
+								<td>UTC +1</td>
+							</tr>
+							<tr>
+								<td>Literacy rate:</td>
+								<td>Males: 98</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Females: 90</td>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+
+Kryeqyteti i Kosoves:  <input type="text" id="name" >
+<button  onclick="check_input();">Submit</button>
+<p id="message" style="font-weight: bold; padding-left: 150px;"></p>
+
+
+<script>
+		function check_input(){
+
+		var kryeqyteti = "prishtina",
+		kryeqyteti1 =  "prishtine",
+		kryeqyteti2 =  "pristina";
+		var Name=document.getElementById("name").value;
+        var name1=Name.toLowerCase();
+        var message = document.getElementById("message");
+         message.innerHTML = "";
+    try{
+    	 if (name1 == ""){
+         	throw "empty!";
+         }
+
+         if(isNaN(name1)==false){
+           throw "a number";   
+		  }
+
+         
+        if(kryeqyteti==name1||kryeqyteti1==name1||kryeqyteti2==name1)
+		{
+			swal("Good job!", "you guessed it right", "success");
+		}
+    
+     	  if(kryeqyteti!=name1&&kryeqyteti1!=name1&&kryeqyteti2!=name1){
+           swal('Oops...','Wrong try again!','error');		   
+		  }
+		 }
+	catch(err) {
+        message.innerHTML = "Input is " + err;
+    }
+}
+						</script>
+				</a>
+			</div>
+                      
+
+
+
+
+					
+    <!--Left bar me linqet e nenfaqeve tjera-->
+	<aside class="leftbar">
+		<!-- Headingu i left bar -->
+		<h5 id="aboutkosovo">ABOUT KOSOVO</h5>
+		<ul>
+			<li><a href="Quick-Facts.html" class="active"> Quick Facts</a></li>
+			<li><a href="History.html">  History</a></li>
+			<li><a href="Culture.html"> Culture</a></li>
+			<li><a href="Population.html"> Population</a></li>
+			<li><a href="Education.html" >Education</a></li>
+			<li><a href="Geography of Kosovo.html"> Geography of Kosovo</a></li>
+			<li><a href="Economy.html" >  Economy</a></li>
+			<li><a href="Cities.html" >  Cities</a> </li>
+			<li><a href="Flag and Anthem.html"> Flag and Anthem</a></li>
+		</ul>
+	</aside>
+
+			<!-- Footeri i websajtit -->
+            <div class="footer">
+				<p> Copyright &copy  2017-2018. All Rights Reserved </p>
+			</div>
+
+
+ </body>
+ 
+</html>

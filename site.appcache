@@ -1,0 +1,48 @@
+CACHE MANIFEST
+#version 2.0
+# CACHE
+index.html
+menu.css
+slideshow.js
+style_i.css
+contact/contact.css
+contact/contact.html
+contact/createaccount.css
+contact/createaccount.html
+discover/destinations/historical.html
+discover/destinations/nature.html
+discover/destinations/religious.html
+discover/destinations/style_d.css
+discover/destinations/showdetails.js
+discover/activities/activities.html
+discover/activities/hiking.html
+discover/activities/kayaking.html
+discover/activities/loja.js
+discover/activities/HikingTrailsCss.css
+discover/activities/styleActivities.css
+discover/discover.css
+discover/discover.html
+about/about-kosovo.css
+about/about-kosovo-fp.css
+about/show-hide.css
+about/tema.css
+about/about-kosovo.html
+about/Cities.html
+about/Culture.html
+about/Economy.html
+about/Education.html
+about/Flag%20and%20Anthem.html
+about/Geography%20of%20Kosovo.html
+about/History.html
+about/Population.html
+about/Quick-Facts.html
+about/show-hide.js
+about/worker.js
+
+# Use from network
+NETWORK:
+*
+
+# Fallback content
+FALLBACK:
+/   /offline.html

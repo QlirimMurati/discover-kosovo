@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kosovo Nature</title>
+	<link rel="stylesheet" href="style_d.css">
+	<link rel="stylesheet" href="../../menu.css">
+	<link rel="stylesheet" href="../../scroll-up-button.css">
+    <script src="../../scroll-up.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<header class="mainheader ">	
+	<nav>
+	 	<div class="simg">
+            <a  href="mailto:qlirimmurati@gmail.com">
+              <img id="secureEmail" src="../../images/menu/gmail.png" alt="gmail">
+             </a>
+            <a href="https://facebook.com">
+              <img src="../../images/menu/facebook.png"  alt="facebook">
+           </a>
+           <a href="https://twitter.com/">
+               <img src="../../images/menu/twitter.png"  alt="twitter">
+           </a>
+        </div>
+			<ul>
+				<li><a href="../../index.html"> HOME</a></li>
+					<li><a href="../../about/about-kosovo.html"> ABOUT KOSOVO</a></li>
+					<li class="active"> <a href="../discover.html"> DISCOVER</a>
+						<ul>
+							<li><a href="nature.html">DESTINATIONS</a></li>
+                            <li><a href="../activities/activities.html">ACTIVITIES</a></li>
+						</ul>
+					</li>
+					<li><a href="../../contact/contact.html"> CONTACT US</a></li>
+			</ul>
+
+    </nav>
+</header>
+
+       <!-- Butoni per scroll up -->
+	<button onclick="topFunction()" id="Btn"  title="Go to top"><p></p></button>
+
+	<aside class="leftbar " >
+		<h5 id="destinations">DESTINATIONS</h5>
+		    <ul>
+			<li><a class="active" href="nature.html"> Nature</a></li>
+			<li><a href="historical.html">  Historical</a></li>
+			<li><a href="religious.html"> Religious</a></li>
+		   </ul>
+	</aside>
+	<div id="getColor"></div>
+	<div id="content">
+		<p id="information">Click on images to see details and press ESC to hide details</p>
+		<section id="item1">
+			<figure>
+				<img src="../../images/nature/brezovica.jpg">
+				<figcaption> <span>Brezovica</span> <br> Brezovica is a settlement in the Shterpce municipality in Kosovo, known for its ski resort. Brezovica is the most visited winter tourist destinations in Kosovo. The ski resort area is ideally situated on the north and northwest-facing slopes of the Šar National Park. The ridge line spans 39,000 hectares of high alpine mountain terrain and forests, with a highly diverse and abundant flora and fauna. Located within 90 minutes of two international airports, the Brezovica resort area represents one of the last remaining under-developed ski resort areas in Southeast Europe.
+				<br/>
+				<p class="specialDesign"><a target="_blank" href="https://www.google.com/maps/place/Brezovica/@42.2088233,20.9466952,15z/data=!3m1!4b1!4m5!3m4!1s0x13538c227122f021:0x34a1778b730e8c1b!8m2!3d42.2088242!4d20.95545?hl=en">Click here to see this place in Google Maps</a></p>
+					<p class="distanca specialDesign" onclick="llogaritDistancen(42.209745, 20.955107)">Calculate the distance beetween you and this location </p>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section id="item2">
+			<figure>
+				<img src="../../images/nature/prevalla.jpg">
+				<figcaption><span>Prevalla</span> <br> A place where you should be in the hottest days , with temperatures of 15 degrees and snow in some parts of the place still there even in August!. Prevalla is a popular destination for hikers or skiers. The village borders a large forest. During the summer, people go there to relax and rest, whereas during the winter people visit it for its seasonal recreational sports. It lies 1800m above sea level. Prevalla is located in the south of Kosovo in the Sharr Mountains, in the road leads from Prizren via Prevalla to Shtrpce
+					<br/>
+				<p class="specialDesign"><a target="_blank" href="https://www.google.com/maps/place/Prevalla/@42.1719829,20.9527462,15z/data=!3m1!4b1!4m5!3m4!1s0x13538cf7f9edcb23:0x133fa081bef65aa4!8m2!3d42.1749539!4d20.959605?hl=en">Click here to see this place in Google Maps</a></p>
+					<p class="distanca specialDesign" onclick="llogaritDistancen(42.175959, 20.959784)">Calculate the distance beetween you and this location </p>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section id="item3">
+			<figure>
+				<img src="../../images/nature/boge.jpg">
+				<figcaption><span>Boga </span><br> Boga is a small mountainous village and also a holiday resort village in western Kosovo. Boga is located in the Prokletije mountain range on an altitude of about 1,300m - 1,400m.  Nearby the village is located the peak of Hajla at 2,403m and the Pećka Bistrica which has its source not far from the village. The village is nestled in by surrounding mountains many of which are picturesque.
+				<br/>
+				<p class="specialDesign"><a target="_blank" href="https://www.google.com/maps/place/Bog%C3%AB/@42.7428374,20.0338988,14z/data=!3m1!4b1!4m5!3m4!1s0x1352f18cd07ed487:0xbc6ff37129676848!8m2!3d42.7395375!4d20.0538994?hl=en">Click here to see this place in Google Maps</a></p>
+					<p class="distanca specialDesign" onclick="llogaritDistancen(42.741766, 20.053983)">Calculate the distance beetween you and this location </p>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section id="item4">
+			<figure>
+				<img src="../../images/nature/driniBardhe.jpg">
+				<figcaption><span>Drini i Bardhe </span><br> The White Drin is a river in the western part of Kosovo. It is located in the village of Radavc, 11 km away from the town of Peja. The Kosovo section of the White Drin flows entirely in the semi-karst part of Kosovo, in an arc-shaped 122-kilometre (76 mi)-long course.[2] The river originates in the southern slopes of the Zhleb mountain, north of the town of Peja. The river springs near the Radavačka Cave. The cave is multi-leveled, not much explored and has a lake inside. The water from the spring was used by the Peć brewery. 
+				<br/>
+				<p class="specialDesign"><a target="_blank" href="https://www.google.com/maps/place/Drini+i+Bardh%C3%AB/@42.5754419,20.5341985,13z/data=!3m1!4b1!4m5!3m4!1s0x13530927561a8ea1:0x7f834e6a5a071057!8m2!3d42.5754473!4d20.569218?hl=en">Click here to see this place in Google Maps</a></p>
+					<p class="distanca specialDesign" onclick="llogaritDistancen(42.579866, 20.569732)">Calculate the distance beetween you and this location </p>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section id="item5">
+			<figure>
+				<img src="../../images/nature/ujvaraMirushes.jpg">
+				<figcaption><span>Ujvara e Mirushes </span><br>The Mirusha waterfalls are a series of waterfalls found in the Mirusha Park, in central Kosovo. The waterfalls have, over time, created canyons and caves, which are famous throughout the country. The river has carved a 10 kilometres (6 mi) canyon and created 13 lakes with waterfalls between them. The waterfalls are one of the most visited attractions of the area and people often swim there. The walls around the waterfalls are white in colour, whereas the water from the Mirusha river is a dirty brown. The waterfall's caves are also popular with visitors. The highest waterfall, between the sixth and seventh lake, is 22 metres (72 ft) high. 
+				<br/>
+				<p class="specialDesign"><a target="_blank" href="https://www.google.com/maps/place/Mirusha+Waterfalls/@42.5240364,20.5981099,17z/data=!3m1!4b1!4m5!3m4!1s0x135309ec182ce59b:0x1a21cc54f874307b!8m2!3d42.5240364!4d20.6002986?hl=en">Click here to see this place in Google Maps</a></p>
+					<p class="distanca specialDesign" onclick="llogaritDistancen(42.524305, 20.600299)">Calculate the distance beetween you and this location </p>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section id="item6">
+			<figure>
+				<img src="../../images/nature/shpellaGadimes.jpg">
+				<figcaption><span>Shpella e Gadimes </span><br> The Marble Cave is a karst limestone cave in the village of Gadime e Ulët, in the municipality of Lipljan in Kosovo. Much of it is still unexplored. Much of it is still unexplored. The cave was found in 1966 by a villager, Ahmet Asllani, who was working on his garden
+				<br/>
+				<p class="specialDesign"><a target="_blank" href="https://www.google.com/maps/place/Marble+Cave/@42.4800669,21.2033208,17z/data=!3m1!4b1!4m5!3m4!1s0x13548410b9a5abdd:0x7f91ece94e8bba2e!8m2!3d42.4800669!4d21.2055095?hl=en">Click here to see this place in Google Maps</a></p>
+					<p class="distanca specialDesign" onclick="llogaritDistancen(42.480273, 21.205509)">Calculate the distance beetween you and this location </p>
+				</figcaption>
+			</figure>
+		</section>
+	</div>
+
+<div class="footer ">
+	<p> Copyright &copy  2017-2018. All Rights Reserved </p>
+</div>
+
+<script type="text/javascript" src="showdetails.js"></script>
+</body>
+</html>

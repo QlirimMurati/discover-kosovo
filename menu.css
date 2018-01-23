@@ -1,0 +1,96 @@
+/* Nav bar */
+.mainheader nav  {
+  margin: 0 auto;
+  padding: 0;
+  height: 40px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  #011424;
+  width: 100%;
+  opacity:  .8;
+  text-align: center;
+  border-style: none;
+  z-index: 1;
+
+}
+
+/* Fotot si linqe te rrjeteve sociale */
+.mainheader nav .simg{
+	position: absolute;
+	right: 0;
+    padding: 0px 10px;
+  	
+
+}
+
+.mainheader .simg a{
+	text-decoration: none;;
+}
+
+.mainheader nav img{
+	padding: 0px 10px;
+	border: 0;
+}
+
+
+/* Stilizimi i menuve kryesore */
+.mainheader nav  ul{
+  list-style: none;
+  margin: 0 ;
+  font-size: 0;
+  float: left;
+}
+
+.mainheader nav ul li {
+ display: inline-block;
+ padding: 10px 10px;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+/* stilizimi i tekstit linqeve */
+.mainheader nav ul li a {
+ text-decoration: none;
+ color: #fff;
+ font-weight: 500;
+ width: 150px;
+ font-size: 17px;
+ font-family: "Hind", sans-serif;
+ display: block;
+ height: 20px;
+}
+
+/* Kur mausi kursori kalon ne njeren nag menyte */
+.mainheader nav ul li:hover {
+ background-color: orange;
+}
+
+.mainheader nav  ul  li  ul {
+ background-color: #011424;
+ position: absolute;
+ padding: 0;
+ margin: 0;
+ margin-left: -10px;
+ top: 100%;
+}
+
+.mainheader nav  ul  li  ul li {
+  display: none;
+}
+
+.mainheader nav  ul  li:hover  ul li{
+  display: block;
+}
+
+/* Stilizimi i menuse qe eshte aktive */
+.mainheader .active{
+  background-color: orange;
+}
+
+
+
+
+
+

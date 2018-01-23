@@ -1,0 +1,198 @@
+<!Doctype html>
+<html>
+<head>
+        <title>Create Account or Plan a Tour</title>    
+
+    <meta lang="en">
+    <meta charset="utf-8">
+    <script src="../sweetalert.js"></script>
+    <link rel="stylesheet" href="createaccount.css"/>
+    <link rel="stylesheet" href="../menu.css"/>
+    <link rel="stylesheet" href="../scroll-up-button.css">
+    <script src="../scroll-up.js"></script>
+    <script type="text/javascript">
+        function check_info(){     
+            var Name=document.getElementById('name').value;
+            var Surname=document.getElementById('surname').value;
+            var Email=document.getElementById('email').value;
+            var Tel=document.getElementById('tel').value;
+            var Password1=document.getElementById('password1').value;
+            var Password2=document.getElementById('password2').value;           
+          if (Name=="" || Surname=="" || Email=="" || Tel=="" || Password1=="" || Password2=="" ){
+                
+               swal(
+                    'Oops...',
+                    'Fill out the fields!',
+                    'error'
+                    );
+                  return false;  
+            }
+              else if(Password1 != Password2)
+                {
+                    swal(
+                    'Oops...',
+                    'Passwords does not match',
+                    'error'
+                    );
+                    return false;
+                }
+            else{
+             return true;
+            }
+            
+          
+
+        }
+
+        function check_info1()
+        {
+            var Name1=document.getElementById('name1').value;
+            var Surname1=document.getElementById('surname1').value;
+            var Email1=document.getElementById('email1').value;
+            var Tel1=document.getElementById('tel1').value;
+            var Country1=document.getElementById('country1').value;
+            var Password_1=document.getElementById('password_1').value;
+            var regex = /^\+?\d{3}-?\d{2}-?\d{3}-?\d{3}$/;
+            if (Name1=="" || Surname1=="" || Email1=="" || Tel1=="" || Password_1=="" || Country1=="")
+                {
+                    swal(
+                    'Oops...',
+                    'Fill out the fields!',
+                    'error'
+                    );
+                  return false;
+                }
+            
+            
+            else if(!regex.test(Tel1)){
+            swal(
+                    'Oops...',
+                    'Phone number wrong!',
+                    'error'
+                    );
+            return false;
+    
+            }
+
+            else{
+             return true;
+            }          
+        }  
+                  
+
+    </script>
+    <script type="text/javascript">
+        function time(){
+        var today = new Date();
+        var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          var koha=h + ":" + m + ":" + s;
+          document.getElementById('time').innerHTML ="Time: "+koha;
+          var r = parseInt(h * 10);
+          var g = parseInt(m * 4);
+          var b = parseInt(s * 4);
+          document.getElementById('clocky').style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+          var t = setTimeout(time, 500);
+        }
+
+    </script>
+
+
+    </head>
+<body onload="time()">
+	<header class="mainheader">	
+		<nav>
+		 	<div class="simg">
+            <a  href="mailto:qlirimmurati@gmail.com">
+              <img id="secureEmail" src="../images/menu/gmail.png" alt="gmail">
+             </a>
+            <a href="https://facebook.com">
+              <img src="../images/menu/facebook.png"  alt="facebook">
+           </a>
+           <a href="https://twitter.com/">
+               <img src="../images/menu/twitter.png"  alt="twitter">
+           </a>
+        </div>
+				<ul>
+					<li><a href="../index.html"> HOME</a></li>
+                    <li><a href="../about/about-kosovo.html"> ABOUT KOSOVO</a></li>
+                    <li> <a href="../discover/discover.html"> DISCOVER</a>
+                        <ul>
+                            <li><a href="../discover/destinations/nature.html">DESTINATIONS</a></li>
+                            <li><a href="../discover/activities/activities.html">ACTIVITIES</a></li>
+                        </ul>
+                    </li>
+                    <li class="active" ><a href="contact.html"> CONTACT US</a></li>
+				</ul>
+
+	    </nav>  
+	</header>
+
+       <!-- Butoni per scroll up -->
+   		<button onclick="topFunction()" id="Btn"  title="Go to top"><p></p></button>
+
+      <div id="clocky"><h1>Create Account</h1><p id="time">Time</p></div>
+  <!--forma-->
+   <!--Section-pjese e page-layout sipas HTML5
+        Definimi i klasave per formatim te formes-->
+    <content class="position">
+        
+        <form class="contactForm" onsubmit="return check_info()" action="www.randyconnolly.com/tests/process.php" method="post" autocomplete="on"> 
+        <fieldset class="field1">
+        <h1 id ="text">Sign Up Here</h1>
+        <input type="text" placeholder="First Name" maxlength="15" width="40px" id="name">
+        <input type="text" placeholder="Last Name" maxlength="15" id="surname"><br/>
+        <input type="text" placeholder="Email Address" maxlength="70" id="email" pattern="[a-z0-9._-]+@[a-z0-9.-]+.[a-z]{2,5}$">
+        <input type="text" placeholder="Phone Number" maxlength="20" id="tel" pattern="^\+?\d{3}-?\d{2}-?\d{3}-?\d{3}$"><br/>
+        <input type="password" placeholder="Password" maxlength="30" id="password1">
+        <input type="password" placeholder="Confirm Password" maxlength="30" id="password2">
+        <p id="teksti">Gjinia: M<input type="radio" name="radio">F<input type="radio" name="radio" required>
+        <input type="checkbox" required>I accept conditions.</p>     
+        <input class="submit" type="submit" name="SUBMIT"/>
+          </fieldset>
+            </form>
+          
+          
+        
+    </content>
+
+    
+    <!--forma tjeter-->
+   <!--Section-pjese e page-layout sipas HTML5
+        Definimi i klasave per formatim te formes tjeter-->
+    <content class="contactForm">
+    <form class = "position" name="Contact" onsubmit="return check_info1()" action="www.randyconnolly.com/tests/process.php" method="post" autocomplete="on">
+        <fieldset class="field2">
+        <h1 id ="text">Plan a Tour</h1>
+        <input type="text" name="FirstName" placeholder="First Name" maxlength="15" width="40px" id="name1">
+        <input type="text" placeholder="Last Name" maxlength="15" name="LastName" id="surname1"><br/>
+        <input type="text" placeholder="Email Address" maxlength="70" id="email1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,5}$">
+        <input type="text" placeholder="Phone Number" maxlength="20" id="tel1"><br/>
+        <input type="text" placeholder="Country" maxlength="30" id="country1">
+        <input type="password" placeholder="Password" maxlength="30" id="password_1">
+        <p id="teksti">Place:<select name = "Vendet">
+            <option> Peje </option>
+            <option> Prizren </option>
+            <option> Skenderaj </option>
+            <option> Mitrovice </option>
+            <option> Istog </option>
+            <option> Prishtine </option>
+            </select>
+            </p>
+        <input class="submit" type="submit" name="SUBMIT">
+        </fieldset>
+    </form>
+   
+    </content>
+    
+      
+    
+    <!--Footer-->
+    <!--Footer-pjese e page-layout sipas HTML5
+        Definimi i klasave per formatim te footerit-->
+    <div class="footer">
+    <p> Copyright &copy  2017-2018. All Rights Reserved </p>
+</div>
+    </body>
+</html>

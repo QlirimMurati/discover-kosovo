@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<tittle></tittle>
+	
+	<!-- Fajlat  external per css dhe javascript -->
+	<link rel="stylesheet" href="discover.css">
+	<link rel="stylesheet" href="../menu.css">
+	<link rel="stylesheet" href="../scroll-up-button.css">
+   	<script src="../scroll-up.js"></script>
+		<style>
+    .arrow{
+      position: relative;
+      font-size: 48px;
+      float: left;
+      margin-left: 80px;
+      transform: rotate(90deg);
+      animation: bouncearrow 1s infinite;
+      color: #011424;
+    }
+
+
+     @keyframes bouncearrow{
+        0%{top: 0px;}
+        50%{top: 20px; color: orange;}
+        100%{top: 0px;  }
+      }
+      
+</style>
+</head>
+<body>
+
+	<!-- Pjesa me menute kryesore dhe fotot si linqe te rrjeteve sociale -->
+	<header class="mainheader">	
+		<nav>
+			<!-- Fotot si linqe te rrjeteve sociale ne nav menu -->
+			<div class="simg">
+		 	<a  href="mailto:qlirimmurati@gmail.com">
+			  <img id="secureEmail" src="../images/menu/gmail.png" alt="gmail">
+			 </a>
+		    <a href="https://facebook.com">
+		      <img src="../images/menu/facebook.png"  alt="facebook">
+		   </a>
+		   <a href="https://twitter.com/">
+		       <img src="../images/menu/twitter.png"  alt="twitter">
+		   </a>
+      </div>
+
+			<!-- Menute kryesore -->
+			<ul>
+					<li><a href="../index.html"> HOME</a></li>
+					<li><a href="../about/about-kosovo.html"> ABOUT KOSOVO</a></li>
+					<li class="active"> <a  href="#"> DISCOVER</a>
+						<ul>
+							<li><a href="destinations/nature.html">DESTINATIONS</a></li>
+							<li><a href="activities/activities.html">ACTIVITIES</a></li>
+						</ul>
+					</li>
+					<li><a href="../contact/contact.html"> CONTACT US</a></li>
+				</ul>
+
+		</nav>
+	</header>
+
+	        <!-- Butoni per scroll up -->
+       		<button onclick="topFunction()" id="Btn"  title="Go to top"><p></p></button>
+
+	<!-- Pjesa e faqes me permbajtjen e temes qe shtjellohet -->
+	<div class="content">
+		<h1>Click in the links below for the best places of Kosovo you can see and visit and the activites you can do </h1>
+				<div class="arrow">&#8674;</div>
+
+	</br>
+		<ul>
+			<li class="title">Destinations
+               <ul>
+               	  <li><a href="destinations/nature.html">Nature</a></li>
+                  <li><a href="destinations/historical.html">Historical</a></li>
+                  <li><a href="destinations/religious.html">Religious</a></li>
+               </ul>
+			</li>
+		</ul>
+		<ul>
+			<li class="title">Activities
+               <ul>
+               	  <li><a href="activities/hiking.html">Hiking</a></li>
+                  <li><a href="activities/activities.html">Drag Race</a></li>
+                  <li><a href="activities/kayaking.html">Kayaking</a></li>
+               </ul>
+			</li>
+		</ul>						
+	</div>
+
+
+		<!--Left bar me linqet e nenfaqeve tjera-->
+		<aside class="leftbar">
+			<!-- Headingu i left bar -->
+			<h5 id="discover">DISCOVER KOSOVO</h5>
+			<table id="navBar"> 
+				<tr><td><a href="destinations/nature.html">Nature</a></td></tr>
+                <tr><td><a href="destinations/historical.html"> Historical places</a></td></tr>
+                <tr><td><a href="destinations/religious.html"> Religious</a> </td></tr>
+                 <tr><td><a href="activities/activities.html" >Drag Race</a></td></tr>
+                 <tr><td><a href="activities/hiking.html"> Hiking</a></td></tr>
+                 <tr><td><a href="activities/kayaking.html" >Kayaking</a></td></tr>
+			</table>
+		</aside>
+
+				<!-- Footeri i websajtit -->
+	            <div class="footer">
+					<p> Copyright &copy  2017-2018. All Rights Reserved </p>
+				</div>
+
+
+	 </body>
+
+	</html>
