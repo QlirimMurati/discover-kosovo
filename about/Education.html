@@ -1,0 +1,141 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Eduaction in Kosovo</title>
+
+		<!-- Fajlat  external per css dhe javascript -->
+	<link rel="stylesheet" href="../menu.css">
+	<link rel="stylesheet" href="about-kosovo.css">
+	<link rel="stylesheet" href="tema.css">
+	<link rel="stylesheet" href="show-hide.css">
+	<link rel="stylesheet" href="../scroll-up-button.css">
+   	<script src="../scroll-up.js"></script>
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   	<script src="../jQuery.js"></script>
+   	<script src="show-hide.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#b1").click(function(){
+			if ($("#show").is( ":contains('UP')" )) {
+	                $("#show").attr("href", "https://www.rit.edu/fa/gdc/node/105");
+	                $("#show").text("AUK");
+		}
+			else{
+			 $("#show").attr("href", "http://www.uni-pr.edu/");
+			                $("#show").text("UP")
+			}
+		    });
+
+		    $("#b2").click(function(){
+		        alert($("#show").attr("href"));
+		    });
+
+	    
+	});
+	</script>
+	</head>
+	<body>
+
+	<!-- Pjesa me menute kryesore dhe fotot si linqe te rrjeteve sociale -->
+	<header class="mainheader">	
+		<nav>
+			<!-- Fotot si linqe te rrjeteve sociale ne nav menu -->
+			<div class="simg">
+		 	<a  href="mailto:qlirimmurati@gmail.com">
+			  <img id="secureEmail" src="../images/menu/gmail.png" alt="gmail">
+			 </a>
+		    <a href="https://facebook.com">
+		      <img src="../images/menu/facebook.png"  alt="facebook">
+		   </a>
+		   <a href="https://twitter.com/">
+		       <img src="../images/menu/twitter.png"  alt="twitter">
+		   </a>
+		</div>
+
+			<!-- Menute kryesore -->
+				<ul>
+					<li ><a href="../index.html"> HOME</a></li>
+					<li class="active" ><a href="about-kosovo.html"> ABOUT KOSOVO</a></li>
+					<li> <a  href="../discover/discover.html"> DISCOVER</a>
+						<ul>
+							<li><a href="../discover/destinations/nature.html">DESTINATIONS</a></li>
+							<li><a href="../discover/activities/activities.html">ACTIVITIES</a></li>
+						</ul>
+					</li>
+					<li><a href="../contact/contact.html"> CONTACT US</a></li>
+				</ul>
+
+		</nav>
+	</header>
+
+	         <!-- Butoni per scroll up -->
+				<button onclick="topFunction()" id="Btn"  title="Go to top"><p></p></button>
+				
+				<!-- Pjesa e faqes me permbajtjen e temes qe shtjellohet -->
+				<div class="content">
+					<h1 id="tema"><a href="#education"> Education </h1>
+						<img src="../images/about-kosovo/education.jpg" alt="education" width="100%" >
+					</br>
+					<a name="education">
+						<h2>Primary Education</h2>
+						<p>In the context of Kosovo laws for education, the primary education ranging from grades 1-5 along with the lower secondary education is obligatory for all citizens and it begins when the child turns 6 years old. The mandatory is nevertheless free of charge.</p>
+						<p>The second phase of the obligatory education is the so called lower secondary education which consists of teenagers usually around 12-15 years of age, therefore, grades 6-9. This education, according to the law, is also free of charge and publicly funded. The lower secondary education is held in the five official languages of Kosovo: Albanian, Serbian, Turkish, Croatian, and Bosnian.</p>
+						<h2>Secondary Education</h2>
+						<p>The higher secondary education is categorized in professional and general education and predominantly lasts around 3-4 years conditional on the educational curriculum that is planned by Kosovo’s Ministry of Education. This level of education is not mandatory but nevertheless highly encouraged. Thus, all students who complete the higher secondary education basically do so on voluntary basis. On the ground of professional secondary education, the main aim is to prepare the youth for professional labor markets with the offering of possibilities to pursue university or post-secondary studies. The higher secondary education is categorized in eight types of schools consisting of classes with various teaching profiles.</p>
+						<h2>Universities</h2>
+						<p>Higher Education is available of attaining in various Universities and different educational institutions offering high professional education. Higher education is also available in public or private institutions where the students are offered Associate’s Degrees’, Bachelor Degrees’, Master Degrees’, and PhD’s. Various schedules are additionally available where students can choose to pursue their studies full-time or part-time.</p>
+						<p>Various alternations were brought by the network of high education institutions where a range of legal standards were adjusted for such institutions to develop. The standards and norms of higher education in Kosovo are supported by European standards as the platform on the development of the higher education system was based on the process of Bologna’s objectives.</p>
+						<p>The Ministry of Education, Science, and Technology has created the Kosovo Accreditation Agency (KAA) according to Kosovo’s law on high education for the aim of assessing the appropriate quality in the higher education private and public institutions.</p>
+					</br>
+					<a href="#tittle" class="tittle">American University in Kosovo/Rochester Institute of Technology</a>
+					<br/>
+					<div  class="divhidden">
+						<p>The American University in Kosovo is the only university in Kosovo that is private and non-profit, solely based on English language teaching.  This opportunity attracts students from many communities in Kosovo especially due to the fact that it is the only university whose degrees’ are recognized and accredited all over the world due to the partnership they possess with the Rochester Institute of Technology (RIT) in Rochester, New York, USA.</p>
+						<p>Students that have been attending AUK up to this date are nationals of 17 different countries world-wide. AUK offers that exact curriculum that is offered by RIT including: the same degree, the same exams, the same syllabuses, the same grading standards, and in many cases the same professors and faculty members.</p>
+					</div>
+				</br>
+				<a href="#tittle" class="tittle">University of Prishtina</a>
+				<br/>
+				<div  class="divhidden">
+				<p>
+				The University of Prishtina was founded with the Law on the Foundation of the University of Prishtina, which was approved by the Socialist Province of Kosovo Assembly on November 18th 1969. The Foundation of University of Prishtina was a historical event for Kosovo’s population and especially for the Albanian nation. The Foundation Assembly of the University of Prishtina was held on February 1970.</p>
+				<p>The Newly founded University consisted of these faculties within its headquarters in Prishtina: Faculty of Philosophy, Faculty of Law and Economics, Faculty of Engineering and Faculty of Medicine.</p>
+				<p>It now has 17 faculties.</p>
+				<p>Higher Pedagogical Schools and Faculty of Teachers Training were transferred to Faculty of Education which are now based in Prishtina, Gjilan, Gjakova and Prizren.</p>
+				<p>The University of Prishtina is one of the first institutions of higher education in the region that has undertaken a process of thorough reforms in accordance with Bologna Process. Implementation of the ECTS system began in the academic year 2001/2002 and ECTS Coordinators were appointed in each academic unit, led by the Institutional Coordinator.  ECTS Coordinators have attended various trainings in Kosovo and abroad and have exchanged and continue to exchange their experiences with well-known European experts in regards to implementation of the Bologna Process in the University of Prishtina.</p>
+			</br>
+				For more, visit the links <a id="show" href="http://www.uni-pr.edu/" target="_blank" style="text-decoration: none; color: blue;padding-left: 10px;">UP</a>
+			</br>
+				<button id="b1" style="background-color: #848181; margin-left: 20px;">change link</button>
+				<button id="b2" style="background-color: #848181; margin-left: 5px;">show href</button>
+
+			</div>
+		</a>
+	</div>
+
+        <!--Left bar me linqet e nenfaqeve tjera-->
+		<aside class="leftbar">
+			<!-- Headingu i left bar -->
+			<h5 id="aboutkosovo">ABOUT KOSOVO</h5>
+			<ul>
+				<li><a href="Quick-Facts.html"> Quick Facts</a></li>
+				<li><a href="History.html">  History</a></li>
+				<li><a href="Culture.html"> Culture</a></li>
+				<li><a href="Population.html"> Population</a></li>
+				<li><a href="Education.html" class="active" >Education</a></li>
+				<li><a href="Geography of Kosovo.html"> Geography of Kosovo</a></li>
+				<li><a href="Economy.html" >  Economy</a></li>
+				<li><a href="Cities.html" >  Cities</a> </li>
+				<li><a href="Flag and Anthem.html"> Flag and Anthem</a></li>
+			</ul>
+		</aside>
+
+				<!-- Footeri i websajtit -->
+	            <div class="footer">
+					<p> Copyright &copy  2017-2018. All Rights Reserved </p>
+				</div>
+
+
+	 </body>
+	 
+	</html>

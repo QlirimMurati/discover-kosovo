@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geograpgy of Kosovo</title>
+
+   <!-- Fajlat  external per css dhe javascript -->
+   <link rel="stylesheet" href="../menu.css">
+	<link rel="stylesheet" href="about-kosovo.css">
+	<link rel="stylesheet" href="tema.css">
+	<link rel="stylesheet" href="show-hide.css">
+	<link rel="stylesheet" href="../scroll-up-button.css">
+   	<script src="../scroll-up.js"></script>
+   	<script src="../sweetalert.js"></script>
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   	<script src="../jQuery.js"></script>
+   	<script src="show-hide.js"></script>
+   	<script src="../about/worker.js"></script>  <!-- Web Worker-->
+    <!--Editimi Web Worker-->
+    <script>
+    if(window.Worker)
+    {
+            const num1 = 12;
+            const num2 = 2;
+            var myWorker = new Worker("worker.js");
+            var message = {addThis: {num1,num2}};
+            myWorker.postMessage(message)
+        myWorker.onmessage = function(e)
+        {
+            console.dir(e.data.result);
+        };
+    }
+    </script>
+
+	<style type="text/css">
+	#bordercountries li{
+		text-decoration: none;
+		padding: 4px;
+	}
+    </style>
+
+</head>
+
+<body class="body">
+
+	<!-- Pjesa me menute kryesore dhe fotot si linqe te rrjeteve sociale -->
+	<header class="mainheader">	
+		<nav>
+			<!-- Fotot si linqe te rrjeteve sociale ne nav menu -->
+			<div class="simg">
+		 	<a  href="mailto:qlirimmurati@gmail.com">
+			  <img id="secureEmail" src="../images/menu/gmail.png" alt="gmail">
+			 </a>
+		    <a href="https://facebook.com">
+		      <img src="../images/menu/facebook.png"  alt="facebook">
+		   </a>
+		   <a href="https://twitter.com/">
+		       <img src="../images/menu/twitter.png"  alt="twitter">
+		   </a>
+		</div>
+
+			<!-- Menute kryesore -->
+				<ul>
+					<li ><a href="../index.html"> HOME</a></li>
+					<li class="active" ><a href="about-kosovo.html"> ABOUT KOSOVO</a></li>
+					<li> <a  href="../discover/discover.html"> DISCOVER</a>
+						<ul>
+							<li><a href="../discover/destinations/nature.html">DESTINATIONS</a></li>
+							<li><a href="../discover/activities/activities.html">ACTIVITIES</a></li>
+						</ul>
+					</li>
+					<li><a href="../contact/contact.html"> CONTACT US</a></li>
+				</ul>
+
+		</nav>
+	</header>
+
+	     <!-- Butoni per scroll up -->
+    		<button onclick="topFunction()" id="Btn"  title="Go to top"><p></p></button>
+
+ <!-- Pjesa e faqes me permbajtjen e temes qe shtjellohet -->
+	<div class="content">
+		<h1 id="tema"><a href="#geoofkosovo"> Geography of Kosovo </h1>
+			<img src="../images/about-kosovo/geography-of-kosovo.jpg" alt="Geography of Kosovo" width="100%">
+			<a name="geoofkosovo">
+				<p>The non-coastal country of Kosovo is in border with Albania, Macedonia, Serbia, and Montenegro, with less than a 4-hour drive from Greece. Kosovo is ringed among the Sharr Mountains located in the southeast border close to Macedonia. The north is surrounded by the Kopaonik Mountains and the southwest borders neighboring Albania and Montenegro are also rocky and mountainous with the highest mountain, Gjeravica peaking at 2,656m high.</p>
+				<p>As far as the central region of Kosovo, it is chiefly hilly and also possesses two extensive plains which spread over the east and west sides of Kosovo. Prishtina, Kosovo’s capital, is the largest city as well as the administrative center of the country. Other key cities include: Peja, Gjakova, Prizren, Gjilan, and Mitrovica which is currently divided into two parts. The region that is most mountainous and filled with valleys which include the chief basins of Kosovo is the Dukagjini region located in the west, which is also drained by the Southern Morava River.<br />
+				Additional focal rivers comprise of the Erenik, Iber, Drin, and Sitnica.</p>
+				<p><em>Location:</em><br />
+					Southeast Europe<br />
+					<em><br />
+					Geographic Coordinates:  </em><br />
+				42 35 N, 21 00 E</p>
+				<p><em>Area:</em><br />
+				10,908 sq km/6777 sq miles</p>
+				<p><em>Land boundaries:</em><br />
+				702 km</p>
+				<script>
+				$(document).ready(function(){
+    $("#bt1").click(function(){
+        $("#borderc").append(" <b>(Vendet fqinje)</b>");
+    });
+});
+</script>
+
+<a href="#bt1" id="bt1" style="color: blue; text-decoration:none;">append some text</a>
+				<p style="font-size: 18px; padding-left: 20px;" id="borderc">Border countries:</p>
+					<ol id="bordercountries">
+						<li>Albania 112 km</li>
+						<li>Macedonia 159 km</li>
+						<li>Montenegro 79 km</li>
+						<li>Serbia 352 km</li>
+					</ol>
+				</br>
+				<script>
+$(document).ready(function(){
+    $("#rm").click(function(){
+        $("iframe").remove(".remove");
+         $("input").remove(".remove1");
+         $("a").remove(".remove2");
+    });
+});
+</script>
+ <a href="#rm" id="rm" class="remove2" style="color: blue; height: 50px; width: 200px; text-decoration: none;  font-size: 17px;display: inline; padding-bottom: 10px;">remove map and button </a>
+				<div class="map">
+				<iframe id="google_map" class="remove" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001997.9839737876!2d20.994819380884124!3d42.711371379970295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13537af354bf7df1%3A0xbfffeedfabc31791!2sKosovo!5e0!3m2!1sen!2s!4v1515716054142" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+                    <input type="submit" value="Show my location" class="remove1" id="get_location" style="color: white; height: 50px; width: 200px; background-color: #A1A3A1; border-radius: 10px; font-size: 17px;display: inline">
+                  
+
+        <p id="error" style="display: inline; color: red; padding-left: 10px;"></p>
+       <script type="text/javascript">
+       	var x=document.getElementById("error");
+        var c = function(pos){
+            var lat   = pos.coords.latitude,
+               long   = pos.coords.longitude,
+         koordinatat   = lat + ' ,' + long;
+        document.getElementById('google_map').setAttribute('src','https://maps.google.com?q='+koordinatat+'&z=17&output=embed');
+            };
+        document.getElementById('get_location').onclick = function(){
+            navigator.geolocation.getCurrentPosition(c,e);
+             };
+
+          var e= function (error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+        </script>
+
+					
+					<br/>	
+					</br>
+					Terrain:
+				<br />
+				Flat fluvial basin with an elevation of 400-700 m above sea level surrounded by several high mountain ranges with elevations of 2,000 to 2,500 m</p>
+				<p><em>Elevation extremes:</em><br />
+					Lowest point: Drini i Bardhë, 297 m (located on the border with Albania.)<br />
+				Highest point: Gjeravica, 2656 m</p>
+				<p><em>Natural resources:</em><br />
+				Nickel, lead, zinc, magnesium, lignite, kaolin, chrome, bauxite</p>
+				<p>&nbsp;</p>
+<h2>Type the correct number to print the area of Kosovo</h2>
+						<form style="display: inline;"  oninput="x.value=parseInt(a.value)+parseInt(b.value)"  >
+							<input type="number" style="width: 100px;" id="a" value="10000">
+							+<input type="number" ; style="width: 100px;" id="b" value="">
+							=<p style="display: inline;"><output name="x" for="a b" id="output"></output>km<sup>2</sup></p>
+						</form>
+						<p style="display: inline; margin-left: 40px;">
+							<button onclick="validation()" >check</button>&#x2190 Check if youre answer is right  </p>
+                      <p id="message" style="font-weight: bold; padding-left: 100px;"></p>
+						<script type="text/javascript">
+							function validation(){
+						    
+							var A="10908";						
+							var B=document.getElementById("b").value;
+							var O=document.getElementById("output").value;
+							var message;
+							message=document.getElementById("message");
+						    message.innerHTML="";
+                        try{
+                                 if(B==""){
+                                     	throw " empty!";
+                                         }
+                                         
+                               	if (A==O) {
+									swal("Good job!", "you guessed it right", "success");
+								        }
+				
+						     	if(A!=O){
+						           swal('Oops...','Wrong Kosovo’s area is 10908 km^2','error');	   
+								  }
+
+								  
+						  }
+							   catch(err){
+								message.innerHTML = "input is" + err;
+							     }
+				}
+					</script>
+					</br>
+
+				<h2>Climate in Kosovo</h2>
+				<p>In general, the climate is continental, with cold, relatively dry winters and warm, humid summers. Summer temperatures in the mountainous areas are notably cooler, averaging about (18° C) with up to 120 days of annual snow cover in the mountains. In mountainous areas, trees cover 40% or more of the region, mostly oak and beech. Deer, bear and wild pigs abound in these areas. May and September are usually the best times to visit climate-wise.</p>
+			</a>
+		</div>
+
+         <!--Left bar me linqet e nenfaqeve tjera-->
+		<aside class="leftbar">
+			<!-- Headingu i left bar -->
+			<h5 id="aboutkosovo">ABOUT KOSOVO</h5>
+			<ul>
+				<li><a href="Quick-Facts.html"> Quick Facts</a></li>
+				<li><a href="History.html">  History</a></li>
+				<li><a href="Culture.html"> Culture</a></li>
+				<li><a href="Population.html"> Population</a></li>
+				<li><a href="Education.html" >Education</a></li>
+				<li><a href="Geography of Kosovo.html" class="active"> Geography of Kosovo</a></li>
+				<li><a href="Economy.html" >  Economy</a></li>
+				<li><a href="Cities.html" >  Cities</a> </li>
+				<li><a href="Flag and Anthem.html"> Flag and Anthem</a></li>
+			</ul>
+		</aside>
+
+				<!-- Footeri i websajtit -->
+	            <div class="footer">
+					<p> Copyright &copy  2017-2018. All Rights Reserved </p>
+				</div>
+
+
+	 </body>
+	 
+	</html>
