@@ -13,6 +13,7 @@
     border-radius: 50%;
     width: 45px;
     height: 45px;
+  opacity:.9;
 }
 
 #Btn p{
@@ -23,7 +24,7 @@
 
   #Btn:hover{
   background: orange;
-  opacity:100;
+  opacity:1;
    }
 
        #Btn p{
