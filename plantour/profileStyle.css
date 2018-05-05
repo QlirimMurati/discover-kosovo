@@ -1,0 +1,145 @@
+body{
+  background-image:  url("../images/nature/parkuimadh.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family:'Raleway', sans-serif;
+  text-align: left;
+   margin: 0;
+}
+
+#container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  float: right;
+}
+
+.accountForm{
+  background-color: rgba(176, 66, 244,0.4);
+  position: relative;
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#loginFrame{
+  height: 470px;
+}
+#fbButton{
+  height: 50px;
+  background: url("../images/menu/fb.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-color: #3b5998;
+  color: white;
+  padding-left: 50px;
+}
+
+h2{
+  position: relative;
+  text-align: center;
+  top: 20px;
+  font-size: 42px;
+}
+
+.input-group{
+  position: relative;
+  padding: 3px;
+  width: 80%;
+  left: 50%;
+  top: 40px;
+  margin-top: 10px;
+  transform: translate(-50%, 0);
+}
+.error p{
+  text-align: center !important;
+  color: red !important;
+}
+#buttonBlock{
+  width: 40%;
+}
+
+input[type='submit']{
+  background-color: rgb(219, 37, 161);
+  border: none;
+  color: white;
+  height: 50px;
+  font-size: 18px;
+}
+#textBlock{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+#textBlock p{
+  display: inline-block;
+  margin-right: 35px;
+  float: right;
+}
+#textBlock label{
+  position: relative;
+  left: 5px;
+  top: -3px;
+}
+.input-group a, #afterSignUp a{
+  text-decoration: none;
+  color: rgb(66, 197, 244);
+}
+.input-group a:hover, #afterSignUp a:hover{
+  color: rgb(66, 237, 244);
+}
+
+
+
+/*Reset email*/
+#resetEmailFrame{
+  height: 250px;
+}
+#resetPasswordFrame{
+  height: 300px;
+}
+
+/*After Sign Up*/
+#afterSignUp{
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  padding-top: 35px;
+}
+#afterSignUp p{
+  color: red;
+}
+#special{
+  color: white !important;
+  margin-top: 30px; 
+}
+
+
+/* Stilizimi i footerit*/
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color:  #011424;
+  opacity: .8;
+}
+
+/* Stilizimi i permbajtjes se footerit*/
+.footer p{
+ position: relative;
+font-size: 16px;
+ width:80%;
+ margin-left: 50px;
+ color: #B7B4B4;
+ top: 50%;
+ transform: translate(0, -50%);
+
+}
+
+.leftbar .active{
+  color: orange
+}
